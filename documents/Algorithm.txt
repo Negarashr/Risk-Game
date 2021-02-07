@@ -1,0 +1,61 @@
+1. Start-up phase
+	Load map
+	Validate map
+	Show map (algorithm)
+	Determine number of players
+	Determine players' colours
+	Assign countries to players (algorithm)
+2. Turn-based phase, for each player
+	2.1 Reinforcement phase
+		Calculate number of new armies
+			floor(number of countries/3) +
+			continent value 1+continent value 2+...+continent value n+
+			if player has 3 cards or more, then for each 3 cards 5*(exchange round), if player has 5 cards, then he must exchange them
+		Place new armies in player's countries
+		Update map
+	2.2 Attack phase
+		While player wants to attack do
+			Determine country to attack (must be enemy's country adjacent to the player's country), player's country must have more than 1 army
+			Determine number of dice of attacker = (number of attacking armies>3 ? 3 : number of attacking armies)
+			Determine number of dice of defender = (number of defending armies>2 ? 2 : number of defending armies)
+			Throw all dice (algorithm)
+			If attacker's max value > defender's max value, then defender looses army, else attacker looses army
+			If defender has rolled 2nd dice, then
+				If attacker's second max value > defender's second max value, then defender looses army, else attacker looses army
+			If 	all defender's armies are eliminated, then attacker captures country and move armies (as many, as dice were used)
+			If it's the defender's last country, then pass all defender's cards to the attacker
+		Update map
+		End of attack
+	2.3 Fortification phase
+		If player wants to move armies, then
+			Choose start and finish countries
+			If there is a path between countries (algorithm), move armies (each country must have atleast 1 army)
+		Update map
+	End of turn, check if game is over (if there is a winner)
+	
+    Rules for Text file which initiates the game:
+    1.first line is number of countries
+    2.each line after that is start with country name, continent name, connected countries Comma separated
+    3.after all countries, continent names on each line with control value
+
+    Rules for verifying the text file:
+    1.check number of lines is higher than number in first line
+    2.each line represent country must has more than 3 lines
+    3.the country name should be present ONLY in one continent name
+    4.check if all countries are connected.
+    5.number of continents shouldNOT be more than countries
+    6.control value must be 0 or positive Integer
+
+
+    - After validating the file, get number of players validate if that number is less than or equal of countries
+    then assign countries to players.
+    - pick color and assign the players turn
+    - section 2.1
+		task 1
+		read the text file as input return
+		list of country object
+		list of player 
+		whos trun is it 
+		to get number from UI and get randomly take color 
+		
+		
