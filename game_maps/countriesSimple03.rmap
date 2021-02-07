@@ -1,0 +1,16 @@
+North America=5
+South America=2
+Europe=6
+Asia=10
+Africa=3
+
+USA,1,0,North America,Canada,Russia,China
+Canada,1,0,North America,USA,Nigeria
+China,1,0,Asia,Russia,USA,Iran,India
+Russia,1,0,Europe,China,USA,Kania
+Iran,1,0,Asia,China,Brazil,India,Kania
+Brazil,1,0,South America,Iran
+India,1,0,Asia,Iran,China
+Kania,1,0,Africa,Iran,Russia,Nigeria,Egypt
+Nigeria,1,0,Africa,Kania,Canada,Egypt
+Egypt,1,0,Africa,Kania,Nigeria

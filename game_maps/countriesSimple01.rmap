@@ -1,0 +1,16 @@
+North America=5
+South America=2
+Europe=6
+Asia=10
+
+USA,1,0,North America,Canada,Russia,China
+Canada,1,0,North America,USA
+China,1,0,Asia,Russia,USA,Iran
+Russia,1,0,Europe,China,USA,Germany
+Iran,1,0,Asia,China,Brazil
+Brazil,1,0,South America,Iran
+Germany,1,0,Europe,Russia,France,Italy
+France,1,0,Europe,Germany,Italy,Spain,Portugal
+Italy,1,0,Europe,France,Germany,Spain,Portugal
+Spain,1,0,Europe,Italy,France
+Portugal,1,0,Europe,Italy,France
