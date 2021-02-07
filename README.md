@@ -4,6 +4,7 @@ The Risk game -Single page web application
 Risk game is a strategy board game.you can read more about the game rules  here : https://en.wikipedia.org/wiki/Risk_(game)
 This project is the online version of this game developed by a group of master students of Concordia university.
 It was a final project for SOEN 6441 - Advanced Programming practices - winter 2019.
+for detailed documentation on the project please check out "Documents" folder.
 
 # team members:
 Ali Molla Mohammadi-Negar Ashouri-Konstantin Chemodanov-Farzaneh Jamshidi-Saman Safaei
